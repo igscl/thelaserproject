@@ -3,14 +3,20 @@ require 'io/console'
 system "clear"
 selection = ""
 times = 0
+frec = false
+vert = false
 puts "Welcome, select input -> frequency(F) or a vertebrae(V)?"
+
+#### Level 1 selection
 while selection = STDIN.noecho(&:getch).chomp.to_s().upcase
     begin
         if selection == "F"
-            puts "hello"
+            puts "You have selected Frequency"
+            frec = true
             break
         elsif selection == "V"
-            puts "goodbye"
+            puts "You have selected Vertebrae"
+            vert = true
             break
         else
             if times < 5
@@ -22,6 +28,19 @@ while selection = STDIN.noecho(&:getch).chomp.to_s().upcase
             end
         end
     rescue
-        puts "Sorry, I did not understand that."
+        puts "Sorry, something broke."
+        break
     end
 end
+####
+#### Level 2 selection
+if frec == true
+    puts
+    puts "Select frequency from the list"
+    puts
+elsif vert == true
+    puts
+    puts "Select vertebrae from the list"
+    puts
+end
+####
