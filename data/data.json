@@ -8,19 +8,51 @@
     "ver_rel" : "T11"
     },
     {
-    "frec" : "A+30",
-    "location" : "V-1",
+    "frec" : "B+30",
+    "location" : "V-2",
     "wave" : "16 Hz",
-    "colour" : "red",
-    "vert" : "C5",
-    "ver_rel" : "T11"
+    "colour" : "orange",
+    "vert" : "C6",
+    "ver_rel" : "T12"
     },
     {
-    "frec" : "B+30",
-    "location" : "V-1",
+    "frec" : "C+30",
+    "location" : "V-3",
     "wave" : "16 Hz",
-    "colour" : "red",
-    "vert" : "C7",
-    "ver_rel" : "T11"
+    "colour" : "yellow",
+    "vert" : "C5",
+    "ver_rel" : "L1"
+    },
+    {
+    "frec" : "D+30",
+    "location" : "V-4",
+    "wave" : "16 Hz",
+    "colour" : "green",
+    "vert" : "C4",
+    "ver_rel" : "L2"
+    },
+    {
+    "frec" : "E+30",
+    "location" : "V-5",
+    "wave" : "16 Hz",
+    "colour" : "blue",
+    "vert" : "C3",
+    "ver_rel" : "L3"
+    },
+    {
+    "frec" : "F+30",
+    "location" : "V-6",
+    "wave" : "16 Hz",
+    "colour" : "tridosha",
+    "vert" : "C2",
+    "ver_rel" : "L4"
+    },
+    {
+    "frec" : "G+30",
+    "location" : "V-7",
+    "wave" : "16 Hz",
+    "colour" : "purple",
+    "vert" : "C1",
+    "ver_rel" : "L5"
     }
 ]

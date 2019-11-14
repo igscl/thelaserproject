@@ -27,7 +27,8 @@ def find_user (ha, input)
     end
     unless found_users.length < 1
         for i in found_users do
-            puts i["vert"] 
+            puts "#{i["location"]} Band and Column"
+            puts "#{i["vert"]} in the Central Nervous System which relates to #{i["ver_rel"]}"
         end
     else 
         return "Sorry, could not find #{fsearch}"
@@ -91,6 +92,7 @@ if frec == true
     fsearch = gets.chomp.to_s().upcase
     begin
         puts
+
         puts "Frequency #{fsearch} should be present in:"
         puts
         find_user(ha, fsearch)
