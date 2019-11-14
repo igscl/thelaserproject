@@ -2,6 +2,7 @@
 require 'io/console'
 require 'curses'
 require 'json'
+fsearch = ""
 begin
     data_read = File.read ('./data/data.json')
     ha = JSON.parse(data_read)
@@ -25,12 +26,13 @@ def find_user (ha, input)
       end 
     end
     unless found_users.length < 1
-        return found_users
+        for i in found_users do
+            puts i["vert"] 
+        end
     else 
         return "Sorry, could not find #{fsearch}"
     end
 end
-#   puts find_user(input)
 
 #welcome message
 system "clear"
@@ -85,10 +87,13 @@ end
 #### Level 2 selection
 if frec == true
     puts
-    puts "Select frequency from the list"
+    puts "Please input frequency"
     fsearch = gets.chomp.to_s().upcase
     begin
-        puts find_user(ha, fsearch)
+        puts
+        puts "Frequency #{fsearch} should be present in:"
+        puts
+        find_user(ha, fsearch)
         rescue
             puts "Sorry, could not find #{fsearch}, please try again"
     end
