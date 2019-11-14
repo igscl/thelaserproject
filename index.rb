@@ -3,22 +3,32 @@ require 'io/console'
 require 'curses'
 require 'json'
 begin
-data_read = File.read ('./data/data.json')
-ha = JSON.parse(data_read)[0]
+    data_read = File.read ('./data/data.json')
+    ha = JSON.parse(data_read)
+
 rescue
     puts "Unable to connect to database"
 end
-def find_user (ha, str)
-    if ha.has_value?(str)
-        puts ha["vert"]
+# def find_user (ha, str)
+#     if ha.has_value?(str)
+#         ha.each do |k, v|
+#             if k == "vert"
+#                 puts ha["vert"]
+#             end
+#         end
+#     end
+def find_user (ha, input)
+    found_users = []
+    ha.each do |item|  
+      if item["frec"] == input 
+        found_users.push(item)
+      end 
     end
-    # ha.each do |frec|  
-    #   if frec["A+30"] == input 
-    #     return find_user
-    #   else 
-    #     puts "Could not find #{input}"
-    #   end 
-    # end
+    unless found_users.length < 1
+        return found_users
+    else 
+        return "Sorry, could not find #{fsearch}"
+    end
 end
 #   puts find_user(input)
 
@@ -76,7 +86,12 @@ end
 if frec == true
     puts
     puts "Select frequency from the list"
-    find_user(ha, "A+30")
+    fsearch = gets.chomp.to_s().upcase
+    begin
+        puts find_user(ha, fsearch)
+        rescue
+            puts "Sorry, could not find #{fsearch}, please try again"
+    end
     puts
 elsif vert == true
     puts

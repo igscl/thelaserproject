@@ -1,4 +1,4 @@
-[  
+[
     {
     "frec" : "A+30",
     "location" : "V-1",
@@ -7,7 +7,14 @@
     "vert" : "C7",
     "ver_rel" : "T11"
     },
-
+    {
+    "frec" : "A+30",
+    "location" : "V-1",
+    "wave" : "16 Hz",
+    "colour" : "red",
+    "vert" : "C5",
+    "ver_rel" : "T11"
+    },
     {
     "frec" : "B+30",
     "location" : "V-1",
