@@ -40,7 +40,7 @@ def find_userv (ha, input)
     end
     unless found_usersv.length < 1
         for i in found_usersv do
-            puts "Frequency #{i["frec"]} and #{i["location"]} in CNS"
+            puts "Frequency #{i["frec"]} and #{i["location"]} in Central Nervous System"
             puts "#{i["vert"]} relates to #{i["ver_rel"]}"
         end
     else 
@@ -50,17 +50,18 @@ end
 ####
 ### Animation
 def animation1
-    50.times do
+    5.times do
       i = 1
       while i < 3
         print "\033[2J"
         File.foreach("./animation/#{i}.rb") { |f| puts f }
-        sleep(0.7)
+        sleep(0.3)
         i += 1
       end
     end
+    puts
+    puts
 end
-
 ####
 #welcome message
 system "clear"
