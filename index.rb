@@ -3,6 +3,7 @@ require 'io/console'
 require 'curses'
 require 'json'
 fsearch = ""
+vsearch = ""
 begin
     data_read = File.read ('./data/data.json')
     ha = JSON.parse(data_read)
@@ -10,14 +11,7 @@ begin
 rescue
     puts "Unable to connect to database"
 end
-# def find_user (ha, str)
-#     if ha.has_value?(str)
-#         ha.each do |k, v|
-#             if k == "vert"
-#                 puts ha["vert"]
-#             end
-#         end
-#     end
+### frequency search
 def find_user (ha, input)
     found_users = []
     ha.each do |item|  
@@ -34,6 +28,25 @@ def find_user (ha, input)
         return "Sorry, could not find #{fsearch}"
     end
 end
+####
+### vertebrae search
+def find_userv (ha, input)
+    found_usersv = []
+    ha.each do |item|  
+      if item["vert"] == input 
+        found_usersv.push(item)
+      end 
+    end
+    unless found_usersv.length < 1
+        for i in found_usersv do
+            puts "Frequency #{i["frec"]} and #{i["location"]} in CNS"
+            puts "#{i["vert"]} relates to #{i["ver_rel"]}"
+        end
+    else 
+        return "Sorry, could not find #{vsearch}"
+    end
+end
+####
 
 #welcome message
 system "clear"
@@ -92,7 +105,6 @@ if frec == true
     fsearch = gets.chomp.to_s().upcase
     begin
         puts
-
         puts "Frequency #{fsearch} should be present in:"
         puts
         find_user(ha, fsearch)
@@ -102,8 +114,46 @@ if frec == true
     puts
 elsif vert == true
     puts
-    puts "Select vertebrae from the list"
+    puts "Please input vertebrae"
+    vsearch = gets.chomp.to_s().upcase
+    begin
+        puts
+        puts "Vertebrae #{vsearch} data:"
+        puts
+        find_userv(ha, vsearch)
+        rescue
+            puts "Sorry, could not find #{vsearch}, please try again"
+    end
     puts
+    puts "Want to see the map? Y/N"
+    ### MAP SELECTION
+    timesyesno = 0
+    while yesno = STDIN.noecho(&:getch).chomp.to_s().upcase
+        begin
+            if yesno == "Y"
+                puts "Here you go"
+                frec = true
+                break
+            elsif yesno == "N"
+                puts
+                vert = true
+                break
+            else
+                if timesyesno < 5
+                    puts "Sorry, I did not understand that, please select again"
+                    timesyesno +=1
+                else
+                    puts "It seems to me you're not understanding, goodbye"
+                    break
+                end
+            end
+        rescue
+            puts "Sorry, something broke."
+            break
+        end
+    end
+    ###
+
 else
     puts "Ups. Something went wrong"
 end
