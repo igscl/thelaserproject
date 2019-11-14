@@ -1,11 +1,29 @@
 # the laser project v0.1
 require 'io/console'
+require 'curses'
+#welcome message
+system "clear"
+Curses.init_screen
+begin
+  msg = Curses.stdscr
+  x = msg.maxx / 2
+  y = msg.maxy / 2
+  z = "The Laser Project"
+  msg.setpos(y, x - (z.length / 2))
+  msg.box("X","x")
+  msg.addstr(z)
+  msg.refresh
+  msg.getch
+ensure
+  Curses.close_screen
+end
+####
 system "clear"
 selection = ""
 times = 0
 frec = false
 vert = false
-puts "Welcome, select input -> frequency(F) or a vertebrae(V)?"
+puts "Welcome, select input -> frequency(F) or vertebrae(V)?"
 
 #### Level 1 selection
 while selection = STDIN.noecho(&:getch).chomp.to_s().upcase
@@ -42,5 +60,7 @@ elsif vert == true
     puts
     puts "Select vertebrae from the list"
     puts
+else
+    puts "Ups. Something went wrong"
 end
 ####
