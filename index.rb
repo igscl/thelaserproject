@@ -2,6 +2,7 @@
 require 'io/console'
 require 'curses'
 require 'json'
+require 'colorize'
 fsearch = ""
 vsearch = ""
 begin
@@ -47,7 +48,20 @@ def find_userv (ha, input)
     end
 end
 ####
+### Animation
+def animation1
+    50.times do
+      i = 1
+      while i < 3
+        print "\033[2J"
+        File.foreach("./animation/#{i}.rb") { |f| puts f }
+        sleep(0.7)
+        i += 1
+      end
+    end
+end
 
+####
 #welcome message
 system "clear"
 Curses.init_screen
@@ -131,7 +145,23 @@ elsif vert == true
     while yesno = STDIN.noecho(&:getch).chomp.to_s().upcase
         begin
             if yesno == "Y"
-                puts "Here you go"
+                animation1
+                # puts
+                # puts
+                # puts "     /~\\"
+                # puts "    (O O)"
+                # puts "    _\\=/_"
+                # puts "   /  _  \\"
+                # puts " ||  \\_/  ||"
+                # puts " || |\\ /| ||"
+                # puts "  # \\_ _/ #"
+                # puts "    | | |"
+                # puts "    | | |"
+                # puts "    []|[]"
+                # puts "    | | |"
+                # puts "   /_] [_\\"
+                # puts
+                # puts
                 frec = true
                 break
             elsif yesno == "N"
