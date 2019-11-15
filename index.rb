@@ -6,6 +6,7 @@ require 'colorize'
 require 'tty-prompt'
 fsearch = ""
 vsearch = ""
+secret = ARGV
 begin
     data_read = File.read ('./data/data.json')
     ha = JSON.parse(data_read)
@@ -60,15 +61,35 @@ def animation1
         sleep(0.3)
         `afplay ./audio/blaster3.wav`
         i += 1
-        # if STDIN.noecho(&:getch).chomp.to_s()
       end
-      `afplay ./audio/scream.wav`
+
     end
 
 end
 ####
+#### splash screen####
+def splash
+    1.times do
+      i = 1
+      while i < 2
+        # print "\033[2J"
+        system "clear"
+        File.foreach("./splash/#{i}.rb") { |f| puts f }
+        sleep(0.3)
+        `afplay ./audio/dramatic.wav`
+        i += 1
+      end
+    end
+
+end
+
+####
 #welcome message
 system "clear"
+    if secret[0] == "--dramatic"
+        splash
+    end
+
 Curses.init_screen
 begin
   msg = Curses.stdscr
@@ -120,14 +141,15 @@ while selection = STDIN.noecho(&:getch).chomp.to_s().upcase
         else
             if times < 5
                 puts "Sorry, I did not understand that, please select again"
+                `afplay ./audio/error.wav`
                 times +=1
             else
                 puts "Are you stupid? I already told you"
                 times = 0
             end
         end
-    rescue
-        puts "Sorry, something broke."
+    # rescue
+    #     puts "Sorry, something broke."
         break
     end
 end
@@ -181,6 +203,9 @@ elsif vert == true
                 if yesno == "Y"
                     frec = true
                     animation1
+                        if secret[0] == "--dramatic"
+                            `afplay ./audio/scream.wav`
+                        end
                     break
                 elsif yesno == "N"
                     puts
@@ -189,6 +214,7 @@ elsif vert == true
                 else
                     if timesyesno < 5
                         puts "Sorry, I did not understand that, please select again"
+                        `afplay ./audio/error.wav`
                         timesyesno +=1
                     else
                         system "clear"
@@ -196,16 +222,16 @@ elsif vert == true
                         break
                     end
                 end
-            rescue
-                puts "Sorry, something broke."
+            # rescue
+            #     puts "Sorry, something broke."
                 break
             end
         end
         ###
     
-        rescue
-            puts "Sorry, could not find #{vsearch}"
-            puts
+        # rescue
+        #     puts "Sorry, could not find #{vsearch}"
+        #     puts
     end
 
 else
