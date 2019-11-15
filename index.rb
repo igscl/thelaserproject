@@ -3,6 +3,7 @@ require 'io/console'
 require 'curses'
 require 'json'
 require 'colorize'
+require 'tty-prompt'
 fsearch = ""
 vsearch = ""
 begin
@@ -57,6 +58,7 @@ def animation1
         File.foreach("./animation/#{i}.rb") { |f| puts f }
         sleep(0.3)
         i += 1
+        if STDIN.noecho(&:getch).chomp.to_s()
       end
     end
     puts
@@ -117,7 +119,18 @@ end
 if frec == true
     puts
     puts "Please input frequency"
-    fsearch = gets.chomp.to_s().upcase
+    # fsearch = gets.chomp.to_s().upcase
+    
+
+prompt = TTY::Prompt.new
+letters = ('A'..'G').to_a
+selection = prompt.select("Choose your octave:", letters, per_page: 7)
+
+frequency_data = ["-30", "-20", "-10", "-0","+10", "+20", "+30"]
+selection2 = prompt.select("Now choose your frequency:", frequency_data, per_page: 7)
+
+fsearch = selection + selection2
+
     begin
         puts
         puts "Frequency #{fsearch} should be present in:"
@@ -130,8 +143,14 @@ if frec == true
 elsif vert == true
     puts
     puts "Please input vertebrae"
-    vsearch = gets.chomp.to_s().upcase
-    begin
+    # vsearch = gets.chomp.to_s().upcase
+    prompt2 = TTY::Prompt.new
+    vsearch_data = ["C1","C2","C3","C4","C5","C6","C7","T1","T2","T3","T4","T5","T6","T7","T8","T9","T10","T11","T12","L1","L2","L3","L4","L5","S1","S2","S3","S4","S5","Coccyx"]
+    vsearch = prompt2.select("Choose your vertebrae:", vsearch_data, per_page: 7)
+
+
+    
+        begin
         puts
         puts "Vertebrae #{vsearch} data:"
         puts
