@@ -51,15 +51,17 @@ end
 ####
 ### Animation
 def animation1
-    4.times do
+    1.times do
       i = 1
       while i < 7
         print "\033[2J"
         File.foreach("./animation/#{i}.rb") { |f| puts f }
         sleep(0.3)
+        `afplay ./audio/blaster3.wav`
         i += 1
         # if STDIN.noecho(&:getch).chomp.to_s()
       end
+      `afplay ./audio/scream.wav`
     end
     puts
     puts
