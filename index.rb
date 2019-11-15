@@ -54,7 +54,8 @@ def animation1
     1.times do
       i = 1
       while i < 7
-        print "\033[2J"
+        # print "\033[2J"
+        system "clear"
         File.foreach("./animation/#{i}.rb") { |f| puts f }
         sleep(0.3)
         `afplay ./audio/blaster3.wav`
@@ -63,8 +64,7 @@ def animation1
       end
       `afplay ./audio/scream.wav`
     end
-    puts
-    puts
+
 end
 ####
 #welcome message
@@ -179,8 +179,8 @@ elsif vert == true
         while yesno = STDIN.noecho(&:getch).chomp.to_s().upcase
             begin
                 if yesno == "Y"
-                    animation1
                     frec = true
+                    animation1
                     break
                 elsif yesno == "N"
                     puts
