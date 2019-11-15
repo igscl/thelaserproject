@@ -58,7 +58,7 @@ def animation1
         File.foreach("./animation/#{i}.rb") { |f| puts f }
         sleep(0.3)
         i += 1
-        if STDIN.noecho(&:getch).chomp.to_s()
+        # if STDIN.noecho(&:getch).chomp.to_s()
       end
     end
     puts
@@ -77,7 +77,22 @@ begin
   msg.box("X","x")
   msg.addstr(z)
   msg.refresh
-  msg.getch
+  
+
+#### animation2
+  2.upto(msg.maxx - 3) do |i|
+    msg.setpos(msg.maxy / 2, i)
+    msg << "~ "
+    msg.refresh
+    sleep 0.01 
+  end
+######
+#### sound
+`afplay ./audio/blaster.wav`
+
+####
+#   msg.getch
+
 ensure
   Curses.close_screen
 end
