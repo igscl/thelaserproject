@@ -1,13 +1,35 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    io-console (0.4.8)
+    colorize (0.8.1)
+    curses (1.3.1)
+    equatable (0.6.1)
+    json (2.2.0)
+    necromancer (0.5.0)
+    pastel (0.7.3)
+      equatable (~> 0.6)
+      tty-color (~> 0.5)
+    tty-color (0.5.0)
+    tty-cursor (0.7.0)
+    tty-prompt (0.19.0)
+      necromancer (~> 0.5.0)
+      pastel (~> 0.7.0)
+      tty-reader (~> 0.6.0)
+    tty-reader (0.6.0)
+      tty-cursor (~> 0.7)
+      tty-screen (~> 0.7)
+      wisper (~> 2.0.0)
+    tty-screen (0.7.0)
+    wisper (2.0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  io-console
+  colorize (~> 0.8.1)
+  curses (~> 1.3)
+  json (~> 2.2)
+  tty-prompt (~> 0.19.0)
 
 BUNDLED WITH
    2.0.2
