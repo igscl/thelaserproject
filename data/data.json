@@ -1,58 +1,394 @@
 [
     {
-    "frec" : "A+30",
-    "location" : "V-1",
-    "wave" : "16 Hz",
-    "colour" : "red",
-    "vert" : "C7",
-    "ver_rel" : "T11"
+        "frec": "A-30",
+        "location": "VI-1",
+        "wave": "96 Hz",
+        "colour": "red",
+        "vert": "pituitary",
+        "ver_rel": "-"
     },
     {
-    "frec" : "B+30",
-    "location" : "V-2",
-    "wave" : "16 Hz",
-    "colour" : "orange",
-    "vert" : "C6",
-    "ver_rel" : "T12"
+        "frec": "B-30",
+        "location": "VI-2",
+        "wave": "96 Hz",
+        "colour": "orange",
+        "vert": "-",
+        "ver_rel": "-"
     },
     {
-    "frec" : "C+30",
-    "location" : "V-3",
-    "wave" : "16 Hz",
-    "colour" : "yellow",
-    "vert" : "C5",
-    "ver_rel" : "L1"
+        "frec": "C-30",
+        "location": "VI-3",
+        "wave": "96 Hz",
+        "colour": "yellow",
+        "vert": "-",
+        "ver_rel": "-"
     },
     {
-    "frec" : "D+30",
-    "location" : "V-4",
-    "wave" : "16 Hz",
-    "colour" : "green",
-    "vert" : "C4",
-    "ver_rel" : "L2"
+        "frec": "D-30",
+        "location": "VI-4",
+        "wave": "96 Hz",
+        "colour": "green",
+        "vert": "hypothalamus",
+        "ver_rel": "-"
     },
     {
-    "frec" : "E+30",
-    "location" : "V-5",
-    "wave" : "16 Hz",
-    "colour" : "blue",
-    "vert" : "C3",
-    "ver_rel" : "L3"
+        "frec": "E-30",
+        "location": "VI-5",
+        "wave": "96 Hz",
+        "colour": "blue",
+        "vert": "-",
+        "ver_rel": "-"
     },
     {
-    "frec" : "F+30",
-    "location" : "V-6",
-    "wave" : "16 Hz",
-    "colour" : "tridosha",
-    "vert" : "C2",
-    "ver_rel" : "L4"
+        "frec": "F-30",
+        "location": "VI-6",
+        "wave": "96 Hz",
+        "colour": "tridosha",
+        "vert": "-",
+        "ver_rel": "-"
     },
     {
-    "frec" : "G+30",
-    "location" : "V-7",
-    "wave" : "16 Hz",
-    "colour" : "purple",
-    "vert" : "C1",
-    "ver_rel" : "L5"
+        "frec": "G-30",
+        "location": "VI-7",
+        "wave": "96 Hz",
+        "colour": "violet",
+        "vert": "-",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "A-20",
+        "location": "VII-1",
+        "wave": "972 Hz",
+        "colour": "red",
+        "vert": "APF",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "B-20",
+        "location": "VII-2",
+        "wave": "972 Hz",
+        "colour": "orange",
+        "vert": "APE",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "C-20",
+        "location": "VII-3",
+        "wave": "972 Hz",
+        "colour": "yellow",
+        "vert": "APM",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "D-20",
+        "location": "VII-4",
+        "wave": "972 Hz",
+        "colour": "green",
+        "vert": "Alma",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "E-20",
+        "location": "VII-5",
+        "wave": "972 Hz",
+        "colour": "blue",
+        "vert": "Manas",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "F-20",
+        "location": "VII-6",
+        "wave": "972 Hz",
+        "colour": "tridosha",
+        "vert": "Buddhi",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "G-20",
+        "location": "VII-7",
+        "wave": "972 Hz",
+        "colour": "violet",
+        "vert": "Atma",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "A-10",
+        "location": "I-1",
+        "wave": "4 Hz",
+        "colour": "red",
+        "vert": "-",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "B-10",
+        "location": "I-2",
+        "wave": "4 Hz",
+        "colour": "orange",
+        "vert": "-",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "C-10",
+        "location": "I-3",
+        "wave": "4 Hz",
+        "colour": "yellow",
+        "vert": "-",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "D-10",
+        "location": "I-4",
+        "wave": "4 Hz",
+        "colour": "green",
+        "vert": "-",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "E-10",
+        "location": "I-5",
+        "wave": "4 Hz",
+        "colour": "blue",
+        "vert": "-",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "F-10",
+        "location": "I-6",
+        "wave": "4 Hz",
+        "colour": "tridosha",
+        "vert": "Coccyx",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "G-10",
+        "location": "I-7",
+        "wave": "4 Hz",
+        "colour": "violet",
+        "vert": "S5",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "A-0",
+        "location": "II-1",
+        "wave": "6 Hz",
+        "colour": "red",
+        "vert": "S4",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "B-0",
+        "location": "II-2",
+        "wave": "6 Hz",
+        "colour": "orange",
+        "vert": "S3",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "C-0",
+        "location": "II-3",
+        "wave": "6 Hz",
+        "colour": "yellow",
+        "vert": "S2",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "D-0",
+        "location": "II-4",
+        "wave": "6 Hz",
+        "colour": "green",
+        "vert": "S1",
+        "ver_rel": "-"
+    },
+    {
+        "frec": "E-0",
+        "location": "II-5",
+        "wave": "6 Hz",
+        "colour": "blue",
+        "vert": "L5",
+        "ver_rel": "C1"
+    },
+    {
+        "frec": "F-0",
+        "location": "II-6",
+        "wave": "6 Hz",
+        "colour": "tridosha",
+        "vert": "L4",
+        "ver_rel": "C2"
+    },
+    {
+        "frec": "G-0",
+        "location": "II-7",
+        "wave": "6 Hz",
+        "colour": "violet",
+        "vert": "L3",
+        "ver_rel": "C3"
+    },
+    {
+        "frec": "A+10",
+        "location": "III-1",
+        "wave": "10 Hz",
+        "colour": "red",
+        "vert": "L2",
+        "ver_rel": "C4"
+    },
+    {
+        "frec": "B+10",
+        "location": "III-2",
+        "wave": "10 Hz",
+        "colour": "orange",
+        "vert": "L1",
+        "ver_rel": "C5"
+    },
+    {
+        "frec": "C+10",
+        "location": "III-3",
+        "wave": "10 Hz",
+        "colour": "yellow",
+        "vert": "T12",
+        "ver_rel": "C6"
+    },
+    {
+        "frec": "D+10",
+        "location": "III-4",
+        "wave": "10 Hz",
+        "colour": "green",
+        "vert": "T11",
+        "ver_rel": "C7"
+    },
+    {
+        "frec": "E+10",
+        "location": "III-5",
+        "wave": "10 Hz",
+        "colour": "blue",
+        "vert": "T10",
+        "ver_rel": "T1"
+    },
+    {
+        "frec": "F+10",
+        "location": "III-6",
+        "wave": "10 Hz",
+        "colour": "tridosha",
+        "vert": "T9",
+        "ver_rel": "T2"
+    },
+    {
+        "frec": "G+10",
+        "location": "III-7",
+        "wave": "10 Hz",
+        "colour": "violet",
+        "vert": "T8",
+        "ver_rel": "T3"
+    },
+    {
+        "frec": "A+20",
+        "location": "IV-1",
+        "wave": "12 Hz",
+        "colour": "red",
+        "vert": "T7",
+        "ver_rel": "T4"
+    },
+    {
+        "frec": "B+20",
+        "location": "IV-2",
+        "wave": "12 Hz",
+        "colour": "orange",
+        "vert": "T6",
+        "ver_rel": "T5"
+    },
+    {
+        "frec": "C+20",
+        "location": "IV-3",
+        "wave": "12 Hz",
+        "colour": "yellow",
+        "vert": "T5",
+        "ver_rel": "T6"
+    },
+    {
+        "frec": "D+20",
+        "location": "IV-4",
+        "wave": "12 Hz",
+        "colour": "green",
+        "vert": "T4",
+        "ver_rel": "T7"
+    },
+    {
+        "frec": "E+20",
+        "location": "IV-5",
+        "wave": "12 Hz",
+        "colour": "blue",
+        "vert": "T3",
+        "ver_rel": "T8"
+    },
+    {
+        "frec": "F+20",
+        "location": "IV-6",
+        "wave": "12 Hz",
+        "colour": "tridosha",
+        "vert": "T2",
+        "ver_rel": "T9"
+    },
+    {
+        "frec": "G+20",
+        "location": "IV-7",
+        "wave": "12 Hz",
+        "colour": "violet",
+        "vert": "T1",
+        "ver_rel": "T10"
+    },
+    {
+        "frec": "A+30",
+        "location": "V-1",
+        "wave": "16 Hz",
+        "colour": "red",
+        "vert": "C7",
+        "ver_rel": "T11"
+    },
+    {
+        "frec": "B+30",
+        "location": "V-2",
+        "wave": "16 Hz",
+        "colour": "orange",
+        "vert": "C6",
+        "ver_rel": "T12"
+    },
+    {
+        "frec": "C+30",
+        "location": "V-3",
+        "wave": "16 Hz",
+        "colour": "yellow",
+        "vert": "C5",
+        "ver_rel": "L1"
+    },
+    {
+        "frec": "D+30",
+        "location": "V-4",
+        "wave": "16 Hz",
+        "colour": "green",
+        "vert": "C4",
+        "ver_rel": "L2"
+    },
+    {
+        "frec": "E+30",
+        "location": "V-5",
+        "wave": "16 Hz",
+        "colour": "blue",
+        "vert": "C3",
+        "ver_rel": "L3"
+    },
+    {
+        "frec": "F+30",
+        "location": "V-6",
+        "wave": "16 Hz",
+        "colour": "tridosha",
+        "vert": "C2",
+        "ver_rel": "L4"
+    },
+    {
+        "frec": "G+30",
+        "location": "V-7",
+        "wave": "16 Hz",
+        "colour": "violet",
+        "vert": "C1",
+        "ver_rel": "L5"
     }
 ]
