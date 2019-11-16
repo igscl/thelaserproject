@@ -24,8 +24,8 @@ def find_user (ha, input)
     end
     unless found_users.length < 1
         for i in found_users do
-            puts "#{i["location"]} Band and Column"
-            puts "#{i["vert"]} in the Central Nervous System which relates to #{i["ver_rel"]}"
+            puts "#{i["location"]} Band and Column".colorize(:green)
+            puts "#{i["vert"]} in the Central Nervous System which relates to #{i["ver_rel"]}".colorize(:green)
         end
     else 
         return "Sorry, could not find #{fsearch}"
@@ -112,7 +112,9 @@ begin
 ######
 #### sound
 `afplay ./audio/blaster.wav`
-
+if secret[0] == "--dramatic"
+    `afplay ./audio/chew.wav`
+end
 ####
 #   msg.getch
 
@@ -148,8 +150,8 @@ while selection = STDIN.noecho(&:getch).chomp.to_s().upcase
                 times = 0
             end
         end
-    # rescue
-    #     puts "Sorry, something broke."
+    rescue
+        puts "Sorry, something broke."
         break
     end
 end
@@ -157,7 +159,7 @@ end
 #### Level 2 selection
 if frec == true
     puts
-    puts "Please input frequency"
+    # puts "Please input frequency"
     # fsearch = gets.chomp.to_s().upcase
     
 
@@ -181,7 +183,7 @@ fsearch = selection + selection2
     puts
 elsif vert == true
     puts
-    puts "Please input vertebrae"
+    # puts "Please input vertebrae"
     # vsearch = gets.chomp.to_s().upcase
     prompt2 = TTY::Prompt.new
     vsearch_data = ["C1","C2","C3","C4","C5","C6","C7","T1","T2","T3","T4","T5","T6","T7","T8","T9","T10","T11","T12","L1","L2","L3","L4","L5","S1","S2","S3","S4","S5","Coccyx"]
@@ -195,7 +197,7 @@ elsif vert == true
         puts
         find_userv(ha, vsearch)
         puts
-        puts "Want to see the map? Y/N"
+        puts "Want to see the animation? Y/N"
         ### MAP SELECTION
         timesyesno = 0
         while yesno = STDIN.noecho(&:getch).chomp.to_s().upcase
@@ -222,16 +224,16 @@ elsif vert == true
                         break
                     end
                 end
-            # rescue
-            #     puts "Sorry, something broke."
+            rescue
+                puts "Sorry, something broke."
                 break
             end
         end
         ###
     
-        # rescue
-        #     puts "Sorry, could not find #{vsearch}"
-        #     puts
+        rescue
+            puts "Sorry, could not find #{vsearch}"
+            puts
     end
 
 else
