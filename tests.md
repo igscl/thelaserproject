@@ -11,7 +11,7 @@ When running the test and selecting C+30, I get the following output:
 - V-3 Band and Column
 - C5 in the Central Nervous System which relates to L1
 
-The test results are succesfull.
+The test results are successful.
 
 ### Test 2
 
@@ -24,7 +24,7 @@ When running the test and selecting D+10, I get the following output:
 - III-4 Band and Column
 - T11 in the Central Nervous System which relates to C7
 
-The test results are succesfull.
+The test results are successful.
 
 ## Testing for correct output when using vertebrae selection
 
@@ -40,7 +40,7 @@ When running the test and selecting C3, I get the following output:
 - Frequency E+30 and V-5 in Central Nervous System
 - C3 relates to L3
 
-The test results are succesfull.
+The test results are successful.
 
 ### Test 4
 
@@ -54,4 +54,4 @@ When running the test and selecting T7, I get the following output:
 - Frequency A+20 and IV-1 in Central Nervous System
 - T7 relates to T4
 
-The test results are succesfull.
+The test results are successful.

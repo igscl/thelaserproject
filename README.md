@@ -1,6 +1,6 @@
 # The Laser Project - Software Development Plan and Help File
 
-[thelaserproject](https://github.com/igscl/thelaserproject)!
+[thelaserproject](https://github.com/igscl/thelaserproject)
 
 ## Statement of Purpose and Scope
 
