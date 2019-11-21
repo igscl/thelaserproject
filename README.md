@@ -1,5 +1,7 @@
 # The Laser Project - Software Development Plan and Help File
 
+[thelaserproject](https://github.com/igscl/thelaserproject)!
+
 ## Statement of Purpose and Scope
 
 ### What is it for?
@@ -78,11 +80,13 @@ If at any point during the use of the application you input data that you aren't
 
 ## Control Flow Diagram
 
-![](./images/laserapp.png)
+![Control Flow Diagram](./images/laserapp.png)
 
 ## Implementation Plan
 
 See on [Trello](https://trello.com/b/OpK9nfI3/laser-app)!
+
+![Trello screenshot](./images/trello.png)
 
 ## HELP!
 
@@ -127,5 +131,5 @@ This was already included in line 36 of this file if you want to go in depth, bu
 - Navigate using cool sounds
 - See a splash screen... check for hidden features!
 
-
+The data of this application is contained in a JSON file, if the program can't connect to the database you'll get an error.
 
