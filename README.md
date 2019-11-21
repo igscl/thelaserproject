@@ -21,7 +21,7 @@ All this data is returned with a simple keyboard navigation, without having to t
 
 ### The Problem
 
-Every student has had trouble remembering data. Piano students often need their sheet music until they don't need it anymore - while some use theirs forever! What we're trying to do here is provide students with a simple and fun way to remember what they need. We're developing it because we are practitioners! And have dealt with these issues for a long time. Everyone likes learning in fun ways and we aim to keep people motivated with what they do. Sometimes you need to do that in funny ways. (That's why we might have included some easter eggs... Shhhh, don't tell anyone.)
+Every student has had trouble remembering data. Piano students often need their sheet music until they don't need it anymore - while some use theirs forever! What we're trying to do here is provide students with a simple and fun way to remember what they need. We're developing it because we are practitioners! And have dealt with these issues for a long time. Everyone likes learning in fun ways and we aim to keep people motivated with what they do. Sometimes you need to do that in funny ways. (That's why we might have included some Easter eggs... Shhhh, don't tell anyone.)
 
 ### Who is it for?
 
@@ -41,7 +41,7 @@ The application includes the following features:
 
 - Fast access menus: We have built our app with you in mind! Our focus was to make the access as fast as possible through a fast, intuitive and easy way of navigating through our data. The data is organised the way it should be and just the way you have used it through the years - nothing has changed but everything has changed! Now just select the input with the arrow keys and press enter when you find your desired choice.
 
-- Output of the desired frecuency data: First you'll get an octave selection, then the desired frecuency. Press ENTER and you'll get the following outputs in an organised way:
+- Output of the desired frequency data: First you'll get an octave selection, then the desired frequency. Press ENTER and you'll get the following outputs in an organised way:
 		- Band and Column
 		- Location and Central Nervous System location
 		- Vertebrae relation to other vertebrae
@@ -50,7 +50,7 @@ The application includes the following features:
 		- Vertebrae frequency and location in the Central Nervous System
 		- Vertebrae relation to other vertebrae in the spine
 
-- Sound effects: All our app uses fun sound effects! This is for having fun remember? We kept you in mind with a theme from a galaxy far, far away.
+- Sound effects: All our app uses fun sound effects! This is for having fun, remember? We kept you in mind with a theme from a galaxy far, far away.
 
 - Animations: When entering the app you'll be able to find some cool animations, and at the very end be able to see an example animation of the laser application when you have selected vertebrae in the navigation menu. Make sure to turn the volume up!
 
@@ -68,11 +68,11 @@ Our app works as follow:
 			- Vertebrae relation to other vertebrae
 			- You will exit the program
 
-	- If you selected Vertebrae: Choose a vertebrae through the navigational menu (use up, down, left and right arrow keys). Make your selection by pressing ENTER! After that you'll get the following data:
+	- If you selected Vertebrae: Choose vertebrae through the navigational menu (use up, down, left and right arrow keys). Make your selection by pressing ENTER! After that you'll get the following data:
 
 			- Vertebrae frequency and location in the Central Nervous System
 			- Vertebrae relation to other vertebrae in the spine
-			- Choice to see an animation or not. If yes you'll see a cool animation, if no is selected, you will exit the program
+			- Choice to see an animation or not. If yes, you'll see a cool animation, if no is selected, you will exit the program
 
 If at any point during the use of the application you input data that you aren't supposed to, we'll know... and you'll know too!
 
@@ -93,7 +93,7 @@ What you need to run this app:
 Hardware requirements:
 - 1.8 GHz or faster processor. Dual-core or better recommended.
 - 4 GB of RAM; 8 GB of RAM recommended (4 GB minimum if running on a virtual machine).
-- Hard disk required, by default: approx 5.6GB.
+- Hard disk required, by default: approx. 5.6GB.
 
 OS and additional requirements:
 - macOS High Sierra 10.13
@@ -125,7 +125,7 @@ This was already included in line 36 of this file if you want to go in depth, bu
 - Get the vertebrae data of a selected vertebrae input by menu navigation
 - If a selection of vertebrae was made, see a cool animation
 - Navigate using cool sounds
-- See a splash screen a check for hidden features
+- See a splash screen... check for hidden features!
 
 
 
