@@ -8,7 +8,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem "curses", "~> 1.3"
 
-gem "json", "~> 2.2"
+gem "json", "~> 2.3"
 
 gem "colorize", "~> 0.8.1"
 
